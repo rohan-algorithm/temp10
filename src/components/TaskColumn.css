@@ -1,0 +1,66 @@
+.col {
+    flex: 1;
+    min-width: 320px; /* Increased minimum width */
+    max-width: 380px; /* Increased maximum width */
+    height: 80vh;
+    overflow-y: auto;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    margin: 10px 0; /* Removes side margins for better alignment */
+    padding: 10px;
+    background-color: #f9f9f9;
+  }
+  
+  /* Task List Styling */
+  .taskList {
+    max-height: calc(100% - 50px);
+    overflow-y: auto;
+    padding: 10px;
+  }
+  
+  /* Column Header Styling */
+  .col h1 {
+    text-align: center;
+    margin: 10px auto;
+    padding: 5px 10px;
+    font-weight: 600;
+    color: white;
+    font-size: 20px;
+    border-radius: 5px;
+  }
+  
+  /* Different Backgrounds for Columns */
+  .col.over {
+    border: 2px dashed #007bff;
+    background-color: #f0f8ff;
+    transition: background-color 0.3s;
+  }
+  
+  .col.upcoming {
+    background: #fdf7bc;
+    border: 1px solid #ffeb3b;
+  }
+  
+  .col.overdue {
+    background-color: #ffebee;
+    border: 1px solid #f44336;
+  }
+  
+  .col.completed {
+    background:  #c0eec2;
+    border: 1px solid #4caf50;
+  }
+  
+  /* Header Backgrounds for Each Column */
+  .col.upcoming h1 {
+    background-color: #ffc107;
+  }
+  
+  .col.overdue h1 {
+    background-color: #d32f2f;
+  }
+  
+  .col.completed h1 {
+    background-color: #388e3c;
+  }
+  

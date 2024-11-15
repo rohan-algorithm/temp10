@@ -1,0 +1,38 @@
+.tasks-page {
+    padding: 20px;
+  }
+  
+  .tasks-page h1 {
+    font-size: 2rem;
+    color: #0747a6;
+    margin-bottom: 20px;
+  }
+  
+  .filter-section {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 20px;
+  }
+  
+  .search-bar {
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 1rem;
+    width: 60%;
+  }
+  
+  .priority-filter {
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 1rem;
+    width: 40%;
+  }
+  
+  .tasks-list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  

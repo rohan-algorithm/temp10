@@ -1,0 +1,221 @@
+/* Navbar */
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px 30px;
+  background: radial-gradient(circle, rgba(63, 94, 251, 1) 0%, rgba(252, 70, 107, 1) 100%);
+  color: rgb(235, 97, 157);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  font-family: Arial, sans-serif;
+  max-width: 1200px;
+  margin: 20px auto;
+  gap: 20px; /* Adds gap between each main item in the navbar */
+}
+
+/* Logo Section */
+.navbar-logo {
+  flex: 0 0 auto; /* Keeps the logo section at a fixed size */
+  display: flex;
+  align-items: center;
+  gap: 10px; /* Adds space around the logo */
+}
+
+.navbar-logo h1 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: white;
+  margin: 0;
+}
+
+/* Filter and Search Container */
+.filter-search-container {
+  display: flex;
+  align-items: center;
+  gap: 20px; /* Adds space between filter and search bar */
+  flex: 1; /* Allows this section to grow to fill space */
+  justify-content: flex-end;
+}
+
+/* Priority Filter Styling */
+.priority-filter {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 1rem;
+  color: #4a4a4a;
+  background-color: #f55ebb;
+  padding: 8px 12px;
+  border-radius: 8px;
+}
+
+.priority-filter label {
+  font-weight: 600;
+}
+
+/* Search Container */
+.search-container {
+  display: flex;
+  align-items: center;
+  background-color: #ff5ce9;
+  padding: 8px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Styling for Search Bar */
+.search-bar {
+  border: none;
+  padding: 12px;
+  font-size: 1rem;
+  color: #333;
+  flex: 1;
+  border-radius: 8px;
+  background-color: #f062cc;
+  transition: box-shadow 0.3s;
+}
+
+.search-bar:focus {
+  box-shadow: 0 0 8px rgba(108, 99, 255, 0.4);
+  outline: none;
+}
+
+.search-button {
+  background-color: #6c63ff;
+  border: none;
+  color: #ffffff;
+  padding: 10px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.search-button:hover {
+  background-color: #4a47a3;
+}
+
+
+/* Example styling for modal visibility */
+
+/* Styling for Add Task Section */
+.addTask {
+  display: flex;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.addTask input {
+  padding: 8px;
+  border-radius: 4px;
+  margin-right: 8px;
+  font-size: 1rem;
+  border: none;
+}
+
+.addTask button {
+  padding: 6px 12px;
+  border: none;
+  border-radius: 4px;
+  background-color: #0052cc;
+  color: white;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.addTask button:hover {
+  background-color: #014ec0;
+}
+
+/* Style for the Add Task Button */
+.open-modal-button {
+  padding: 10px 20px;
+  font-size: 1em;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-bottom: 20px;
+  transition: background-color 0.3s;
+}
+
+.open-modal-button:hover {
+  background-color: #0056b3;
+}
+
+/* Overlay style for modal */
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.75);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Modal content style */
+.modal {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 10px;
+  width: 100%;
+  max-width: 400px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  animation: slideIn 0.3s ease;
+}
+
+.modal h2 {
+  margin-top: 0;
+  color: #333;
+}
+
+.modal input[type="text"],
+.modal textarea,
+.modal input[type="date"],
+.modal select {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 1em;
+}
+
+.modal textarea {
+  resize: vertical;
+  min-height: 80px;
+}
+
+.submit-button {
+  padding: 10px 15px;
+  background-color: #28a745;
+  color: white;
+  font-size: 1em;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 100%;
+  transition: background-color 0.3s;
+}
+
+.submit-button:hover {
+  background-color: #218838;
+}
+
+/* Animation for modal appearance */
+@keyframes slideIn {
+  from {
+    transform: translateY(-20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}

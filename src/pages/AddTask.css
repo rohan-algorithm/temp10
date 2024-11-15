@@ -1,0 +1,44 @@
+.add-task-page {
+    padding: 20px;
+  }
+  
+  .add-task-page h1 {
+    font-size: 2rem;
+    color: #0747a6;
+    margin-bottom: 20px;
+  }
+  
+  .task-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .task-form input,
+  .task-form textarea,
+  .task-form select,
+  .task-form button {
+    padding: 10px;
+    font-size: 1rem;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+  }
+  
+  .task-form textarea {
+    resize: vertical;
+    min-height: 100px;
+  }
+  
+  .task-form button {
+    background-color: #28a745;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    border: none;
+  }
+  
+  .task-form button:hover {
+    background-color: #218838;
+  }
+  
